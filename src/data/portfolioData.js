@@ -32,6 +32,28 @@ export const SKILLS = [
 
 export const PROJECTS = [
     {
+        id: 7,
+        title: 'Disaster Management System',
+        description: 'A comprehensive platform for tracking and responding to natural disasters with real-time resource mapping.',
+        tech: ['React', 'Node.js', 'PostgreSQL'],
+        github: '#',
+        live: 'https://disastermanagement90.netlify.app/',
+        color: '#ef4444',
+        category: 'Full-Stack',
+        featured: true,
+    },
+    {
+        id: 6,
+        title: 'Expense Tracker',
+        description: 'A seamless expense tracking application to manage personal finances, track daily spending, and visualize budget distribution.',
+        tech: ['React', 'JavaScript', 'CSS'],
+        github: '#',
+        live: 'https://miniproject1234.netlify.app/',
+        color: '#10b981',
+        category: 'Frontend',
+        featured: true,
+    },
+    {
         id: 1,
         title: 'FullStack E-Commerce Platform',
         description: 'A complete e-commerce solution with real-time inventory, payment integration, and admin dashboard. Supports multi-vendor marketplace model.',
@@ -48,7 +70,7 @@ export const PROJECTS = [
         description: 'Modular ERP covering inventory, HR, payroll, and financial reporting. Built for a mid-sized manufacturing company with 200+ users.',
         tech: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'JWT'],
         github: '#',
-        live: '#',
+        live: 'https://minierp1.netlify.app',
         color: '#8b5cf6',
         category: 'Enterprise',
         featured: true,
@@ -160,8 +182,14 @@ export const TERMINAL_RESPONSES = {
              WordPress ████████ 90%`,
 
     projects: `📁 Featured Projects:
+
+  1. Disaster Management System
+     → React + Node.js + PostgreSQL
   
-  1. FullStack E-Commerce Platform
+  2. Expense Tracker
+     → React + JavaScript + CSS
+
+  3. FullStack E-Commerce Platform
      → React + Node.js + PostgreSQL + Stripe
   
   2. Enterprise ERP System  
@@ -177,9 +205,9 @@ export const TERMINAL_RESPONSES = {
 
     contact: `📬 Let's Connect!
   
-  📧 Email:    nisarg@email.com
+  📧 Email:    nisargbhatt.n@gmail.com
   💼 LinkedIn: linkedin.com/in/nisarg
-  🐙 GitHub:   github.com/nisarg
+  🐙 GitHub:   github.com/nisargbhatt93
   
   Or use the contact form below ↓`,
 

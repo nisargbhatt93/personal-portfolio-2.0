@@ -10,7 +10,7 @@ import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Services from './sections/Services'
 import Terminal from './sections/Terminal'
-import Contact from './sections/Contact'
+import Contact from './components/Footer'
 
 export default function App() {
   const [loading, setLoading] = useState(true)

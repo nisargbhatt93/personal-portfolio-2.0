@@ -7,9 +7,9 @@ const LINKS = [
     { label: 'Contact', href: '#contact' },
 ]
 const SOCIALS = [
-    { icon: '🐙', href: 'https://github.com/nisarg', label: 'GitHub' },
-    { icon: '💼', href: 'https://linkedin.com/in/nisarg', label: 'LinkedIn' },
-    { icon: '📧', href: 'mailto:nisarg@email.com', label: 'Email' },
+    { icon: '🐙', href: 'https://github.com/nisargbhatt93', label: 'GitHub' },
+    { icon: '💼', href: 'https://www.linkedin.com/in/nisarg-bhatt-52650a285', label: 'LinkedIn' },
+    { icon: '📧', href: 'mailto:nisargbhatt.n@gmail.com', label: 'Email' },
 ]
 
 export default function Footer() {

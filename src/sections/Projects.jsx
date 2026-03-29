@@ -44,14 +44,10 @@ function ProjectCard({ project, index, isVisible }) {
                 </div>
 
                 {/* Actions */}
-                <div className="grid grid-cols-2 gap-2 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                <div className="grid grid-cols-1 gap-2 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                     <a href={project.live} className="text-center text-xs py-2 rounded-lg font-semibold transition-all"
                         style={{ background: `${project.color}15`, color: project.color, border: `1px solid ${project.color}25` }}>
                         Live Demo →
-                    </a>
-                    <a href={project.github} className="text-center text-xs py-2 rounded-lg font-semibold glass transition-all hover:bg-white/5"
-                        style={{ color: 'var(--muted)' }}>
-                        Source Code
                     </a>
                 </div>
             </div>
@@ -62,7 +58,7 @@ function ProjectCard({ project, index, isVisible }) {
 export default function Projects() {
     const [ref, isVisible] = useIntersectionObserver()
     const [filter, setFilter] = useState('All')
-    const cats = ['All', 'Full-Stack', 'Enterprise', 'E-Commerce', 'Automation', 'AI/ML']
+    const cats = ['All', 'Frontend', 'Full-Stack', 'Enterprise', 'E-Commerce', 'Automation', 'AI/ML']
     const filtered = filter === 'All' ? PROJECTS : PROJECTS.filter(p => p.category === filter)
 
     return (
