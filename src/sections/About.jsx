@@ -31,7 +31,7 @@ export default function About() {
                     initial={{ opacity: 0, y: 24 }} animate={isVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.55 }}>
                     <span className="section-tag">— About Me</span>
                     <h2 className="section-heading gradient-text mb-4">Who I Am</h2>
-                    <p className="section-desc">A full-stack developer crafting digital experiences with focus on performance, UX, and real business impact.</p>
+                    <p className="section-desc">A software engineer crafting scalable cloud architectures, high-performance web apps, and digital experiences.</p>
                 </motion.div>
 
                 {/* Row 1: Bio | Values */}
@@ -44,17 +44,17 @@ export default function About() {
                                 style={{ background: 'linear-gradient(135deg,#3b82f6,#8b5cf6)' }}>N</div>
                             <div>
                                 <h3 className="text-lg font-bold">Nisarg</h3>
-                                <p className="text-sm" style={{ color: 'var(--muted)' }}>Full-Stack Developer</p>
+                                <p className="text-sm" style={{ color: 'var(--muted)' }}>Software Engineer</p>
                             </div>
                         </div>
                         <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
                             Self-driven developer with <strong style={{ color: 'var(--text)' }}>4+ years</strong> of experience — from marketing sites to enterprise-grade applications.
                         </p>
                         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
-                            Core stack: <strong style={{ color: '#61DAFB' }}>React</strong>, <strong style={{ color: '#68CC45' }}>Node.js</strong>, <strong style={{ color: '#699EE6' }}>PostgreSQL</strong>. E-commerce: <strong style={{ color: '#96BF48' }}>Shopify</strong> &amp; <strong style={{ color: '#21759B' }}>WordPress</strong>.
+                            Core stack: <strong style={{ color: '#61DAFB' }}>React</strong>, <strong style={{ color: '#68CC45' }}>Node.js</strong>, <strong style={{ color: '#FF9900' }}>AWS</strong>, <strong style={{ color: '#699EE6' }}>PostgreSQL</strong>, and <strong style={{ color: '#2496ED' }}>Docker</strong>.
                         </p>
                         <div className="flex flex-wrap gap-2 mt-auto">
-                            {['India 📍', 'Remote-Friendly 🌍', 'Open to Work 💼'].map(t => (
+                            {['Ahmedabad & Bhavnagar 📍', 'Remote-Friendly 🌍', 'Open to Work 💼'].map(t => (
                                 <span key={t} className="px-3 py-1 rounded-full text-xs glass" style={{ color: 'var(--muted)' }}>{t}</span>
                             ))}
                         </div>

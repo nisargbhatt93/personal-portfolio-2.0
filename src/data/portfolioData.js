@@ -20,14 +20,14 @@ export const TECH_ICONS = [
 ]
 
 export const SKILLS = [
-    { name: 'HTML5 & CSS3', level: 95, years: 5, category: 'Frontend', color: '#E34F26' },
-    { name: 'JavaScript', level: 90, years: 4, category: 'Frontend', color: '#F7DF1E' },
-    { name: 'React.js', level: 88, years: 3, category: 'Frontend', color: '#61DAFB' },
-    { name: 'Node.js', level: 82, years: 3, category: 'Backend', color: '#339933' },
-    { name: 'PostgreSQL', level: 78, years: 2, category: 'Database', color: '#4169E1' },
-    { name: 'Shopify', level: 85, years: 3, category: 'E-Commerce', color: '#96BF48' },
-    { name: 'WordPress', level: 90, years: 4, category: 'CMS', color: '#21759B' },
-    { name: 'REST APIs', level: 84, years: 3, category: 'Backend', color: '#8b5cf6' },
+    { name: 'React.js & TS', level: 90, years: 4, category: 'Frontend', color: '#61DAFB' },
+    { name: 'Node.js', level: 88, years: 4, category: 'Backend', color: '#339933' },
+    { name: 'AWS Cloud', level: 85, years: 3, category: 'Cloud', color: '#FF9900' },
+    { name: 'Docker', level: 80, years: 2, category: 'DevOps', color: '#2496ED' },
+    { name: 'PostgreSQL', level: 85, years: 3, category: 'Database', color: '#4169E1' },
+    { name: 'CI/CD Pipelines', level: 82, years: 3, category: 'DevOps', color: '#8b5cf6' },
+    { name: 'Microservices', level: 78, years: 2, category: 'Architecture', color: '#ec4899' },
+    { name: 'System Design', level: 80, years: 2, category: 'Engineering', color: '#06b6d4' },
 ]
 
 export const PROJECTS = [
@@ -112,39 +112,39 @@ export const PROJECTS = [
 
 export const SERVICES = [
     {
-        icon: '🌐',
-        title: 'Web Development',
-        description: 'Pixel-perfect, performant websites built with modern frameworks. SEO-optimized and mobile-first by default.',
-        features: ['Custom Design', 'SEO Optimized', 'Mobile-First', 'Fast Loading'],
-        color: '#3b82f6',
+        icon: '☁️',
+        title: 'Cloud Architecture (AWS)',
+        description: 'Design and deploy scalable, fault-tolerant cloud infrastructures using AWS. Serverless, EC2, S3, and container orchestration.',
+        features: ['Cloud Migration', 'Serverless', 'Infrastructure as Code', 'Cost Optimization'],
+        color: '#FF9900',
+    },
+    {
+        icon: '⚙️',
+        title: 'DevOps & CI/CD',
+        description: 'Streamline the development lifecycle with automated testing, continuous integration, and seamless deployments.',
+        features: ['Docker', 'GitHub Actions', 'Jenkins', 'Automated Testing'],
+        color: '#2496ED',
     },
     {
         icon: '⚡',
-        title: 'Full-Stack Development',
-        description: 'End-to-end application development with robust backends, RESTful APIs, and scalable database architecture.',
-        features: ['React & Node.js', 'REST APIs', 'Database Design', 'Auth & Security'],
+        title: 'Software Engineering',
+        description: 'End-to-end application development with robust microservices, RESTful APIs, and scalable database architecture.',
+        features: ['React & Node.js', 'Microservices', 'System Design', 'Auth & Security'],
         color: '#8b5cf6',
-    },
-    {
-        icon: '🔗',
-        title: 'API Integration',
-        description: 'Seamlessly integrate third-party services, payment gateways, CRMs, and automation tools into your platform.',
-        features: ['Payment Gateways', 'CRM Systems', 'Webhooks', 'OAuth Flows'],
-        color: '#06b6d4',
     },
     {
         icon: '🤖',
         title: 'Automation Systems',
         description: 'Eliminate repetitive tasks with smart workflow automation. Reduce errors and free your team for high-value work.',
-        features: ['Workflow Automation', 'Data Pipelines', 'Scheduled Jobs', 'Zapier & Slack'],
+        features: ['Data Pipelines', 'Scheduled Jobs', 'Webhooks', 'Internal Tools'],
         color: '#10b981',
     },
     {
-        icon: '🚀',
-        title: 'Performance Optimization',
-        description: 'Audit and optimize your web app for speed, accessibility, and Core Web Vitals. Achieve 95+ Lighthouse scores.',
-        features: ['Core Web Vitals', 'Code Splitting', 'Image Optimization', 'CDN Setup'],
-        color: '#ec4899',
+        icon: '🌐',
+        title: 'Web Development',
+        description: 'Pixel-perfect, performant frontend applications built with modern frameworks. SEO-optimized and mobile-first by default.',
+        features: ['React.js', 'Next.js', 'TailwindCSS', 'Core Web Vitals'],
+        color: '#06b6d4',
     },
 ]
 
@@ -160,26 +160,26 @@ export const TERMINAL_RESPONSES = {
 
     about: `👋 Hi, I'm Nisarg!
   
-  A passionate Full-Stack Web Developer specializing in 
-  building high-performance web applications and automation 
-  systems.
+  A passionate Software Engineer & Cloud Specialist specializing in 
+  building scalable architectures, cloud infrastructure on AWS, 
+  and high-performance web applications.
 
-  📍 Location: India
-  💼 Status: Available for freelance & full-time
-  🎯 Focus: React, Node.js, PostgreSQL, Shopify`,
+  📍 Location: Ahmedabad, Bhavnagar & Remote
+  💼 Status: Available for full-time & freelance roles
+  🎯 Roles: Software Engineer / Cloud Engineer / Web Developer`,
 
     skills: `🛠️ Technical Skills:
   
-  Frontend:  HTML ████████████ 95%
-             CSS  ████████████ 95%
-             JS   ███████████░ 90%
-             React ██████████░ 88%
+  Cloud/DevOps: AWS ██████████░ 85%
+                Docker █████████░ 80%
+                CI/CD ██████████░ 82%
   
-  Backend:   Node.js ████████░ 82%
-             PostgreSQL ██████░ 78%
+  Engineering:  Node.js ██████████░ 88%
+                React.js ██████████ 90%
+                PostgreSQL █████████░ 85%
   
-  Platforms: Shopify ████████ 85%
-             WordPress ████████ 90%`,
+  Architecture: Microservices ████████░ 78%
+                System Design █████████░ 80%`,
 
     projects: `📁 Featured Projects:
 
@@ -213,7 +213,7 @@ export const TERMINAL_RESPONSES = {
 
     experience: `💼 Experience:
   
-  2023 - Present  |  Lead Frontend Developer
+  2023 - Present  |  Software Engineer (Cloud & Full-Stack)
   2021 - 2023     |  Full-Stack Developer  
   2020 - 2021     |  Junior Web Developer
   

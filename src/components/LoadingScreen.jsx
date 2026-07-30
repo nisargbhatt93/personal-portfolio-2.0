@@ -100,7 +100,7 @@ export default function LoadingScreen({ onComplete }) {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5 }}
                     >
-                        Web Developer
+                        Software Engineer &amp; Cloud Specialist
                     </motion.p>
 
                     {/* Progress bar */}

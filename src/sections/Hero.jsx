@@ -4,11 +4,11 @@ import { Suspense, lazy, useState, useEffect } from 'react'
 const HeroScene = lazy(() => import('../components/three/HeroScene'))
 
 const CODE = [
-    { t: 'const developer = {', c: '#e2e8f0' },
+    { t: 'const engineer = {', c: '#e2e8f0' },
     { t: '  name: "Nisarg",', c: '#06b6d4' },
-    { t: '  role: "Full-Stack Dev",', c: '#06b6d4' },
-    { t: '  stack: ["React","Node"],', c: '#a78bfa' },
-    { t: '  passion: "Building",', c: '#fbbf24' },
+    { t: '  roles: ["Software Engineer", "DevOps"],', c: '#06b6d4' },
+    { t: '  skills: ["React","Node","AWS"],', c: '#a78bfa' },
+    { t: '  passion: "Scalable Systems",', c: '#fbbf24' },
     { t: '  available: true', c: '#34d399' },
     { t: '}', c: '#e2e8f0' },
 ]
@@ -67,12 +67,12 @@ export default function Hero() {
                             I'm&nbsp;<span className="gradient-text">Nisarg</span>
                         </motion.h1>
                         <motion.p variants={item} style={{ fontSize: '1.3rem', fontWeight: 500, color: 'var(--muted)', marginBottom: '1.25rem' }}>
-                            Full-Stack Web Developer
+                            Software Engineer &amp; Cloud Specialist
                         </motion.p>
 
                         {/* Desc */}
                         <motion.p variants={item} style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--muted)', maxWidth: '440px', marginBottom: '2rem' }}>
-                            I craft <span className="gradient-text-2" style={{ fontWeight: 600 }}>high-performance web apps</span>, automation pipelines &amp; e-commerce solutions that drive real business results.
+                            I design and build <span className="gradient-text-2" style={{ fontWeight: 600 }}>scalable software systems</span>, robust cloud architectures on AWS, and high-performance web applications.
                         </motion.p>
 
                         {/* Code snippet */}

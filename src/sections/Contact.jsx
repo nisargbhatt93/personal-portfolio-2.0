@@ -10,7 +10,7 @@ const SOCIALS = [
 
 const INFO = [
     { icon: '📧', label: 'Email', val: 'nisargbhatt.n@gmail.com' },
-    { icon: '📍', label: 'Location', val: 'India (Remote Available)' },
+    { icon: '📍', label: 'Location', val: 'Ahmedabad, Bhavnagar & Remote' },
     { icon: '⏰', label: 'Response Time', val: 'Within 24 hours' },
 ]
 
@@ -24,7 +24,19 @@ export default function Contact() {
     const submit = async e => {
         e.preventDefault()
         setStatus('sending')
-        await new Promise(r => setTimeout(r, 1400))
+        
+        // Format the message
+        const text = `Hi Nisarg! I'm reaching out from your portfolio.\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Message:*\n${form.message}`
+        const encodedText = encodeURIComponent(text)
+        
+        // IMPORTANT: Replace this with your actual WhatsApp phone number (with country code, no + or spaces)
+        // Example for India: 919876543210
+        const phoneNumber = '917861867933' 
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`
+        
+        // Open WhatsApp in a new tab
+        window.open(whatsappUrl, '_blank')
+        
         setStatus('success')
         setForm({ name: '', email: '', message: '' })
         setTimeout(() => setStatus(null), 4000)
