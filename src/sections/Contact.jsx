@@ -25,20 +25,32 @@ export default function Contact() {
         e.preventDefault()
         setStatus('sending')
         
-        // Format the message
-        const text = `Hi Nisarg! I'm reaching out from your portfolio.\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Message:*\n${form.message}`
-        const encodedText = encodeURIComponent(text)
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: JSON.stringify({
+                    access_key: "5f5c14d9-9a6f-40b2-a56e-ff280aa3bf24",
+                    name: form.name,
+                    email: form.email,
+                    message: form.message
+                })
+            })
+            
+            const json = await res.json()
+            if (json.success) {
+                setStatus('success')
+                setForm({ name: '', email: '', message: '' })
+            } else {
+                setStatus('error')
+            }
+        } catch (err) {
+            setStatus('error')
+        }
         
-        // IMPORTANT: Replace this with your actual WhatsApp phone number (with country code, no + or spaces)
-        // Example for India: 919876543210
-        const phoneNumber = '917861867933' 
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`
-        
-        // Open WhatsApp in a new tab
-        window.open(whatsappUrl, '_blank')
-        
-        setStatus('success')
-        setForm({ name: '', email: '', message: '' })
         setTimeout(() => setStatus(null), 4000)
     }
 
@@ -147,13 +159,18 @@ export default function Contact() {
                                         <motion.div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full"
                                             animate={{ rotate: 360 }} transition={{ duration: 0.8, repeat: Infinity, ease: 'linear' }} />
                                     )}
-                                    <span>{status === 'sending' ? 'Sending...' : status === 'success' ? '✅ Message Sent!' : 'Send Message →'}</span>
+                                    <span>{status === 'sending' ? 'Sending...' : status === 'success' ? '✅ Message Sent!' : status === 'error' ? '❌ Failed' : 'Send Message →'}</span>
                                 </span>
                             </motion.button>
 
                             {status === 'success' && (
                                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-sm" style={{ color: '#34d399' }}>
                                     Thanks! I'll get back to you within 24 hours.
+                                </motion.p>
+                            )}
+                            {status === 'error' && (
+                                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-sm" style={{ color: '#ef4444' }}>
+                                    Oops! Something went wrong. Please try again.
                                 </motion.p>
                             )}
                         </form>
